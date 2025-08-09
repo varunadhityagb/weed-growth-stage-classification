@@ -1,0 +1,94 @@
+Splitting dataset with stratification...
+
+============================================================
+SPLIT STATISTICS
+============================================================
+asiatic-dayflower_w3:
+  Total: 840 | Train: 504 | Val: 168 | Test: 168
+indian-goosegrass_w6:
+  Total: 400 | Train: 240 | Val: 80 | Test: 80
+asian-flatsedge_w0:
+  Total: 2370 | Train: 1422 | Val: 474 | Test: 474
+indian-goosegrass_w2:
+  Total: 969 | Train: 581 | Val: 194 | Test: 194
+korean-dock_w1:
+  Total: 1392 | Train: 834 | Val: 279 | Test: 279
+nipponicus-sedge_w2:
+  Total: 840 | Train: 504 | Val: 168 | Test: 168
+asiatic-dayflower_w5:
+  Total: 360 | Train: 216 | Val: 72 | Test: 72
+asian-flatsedge_w1:
+  Total: 2232 | Train: 1338 | Val: 447 | Test: 447
+indian-goosegrass_w13:
+  Total: 30 | Train: 18 | Val: 6 | Test: 6
+asian-flatsedge_w3:
+  Total: 1677 | Train: 1005 | Val: 336 | Test: 336
+asian-flatsedge_w7:
+  Total: 792 | Train: 474 | Val: 159 | Test: 159
+indian-goosegrass_w11:
+  Total: 930 | Train: 558 | Val: 186 | Test: 186
+asiatic-dayflower_w1:
+  Total: 1392 | Train: 834 | Val: 279 | Test: 279
+korean-dock_w2:
+  Total: 1056 | Train: 633 | Val: 211 | Test: 212
+asian-flatsedge_w6:
+  Total: 840 | Train: 504 | Val: 168 | Test: 168
+korean-dock_w4:
+  Total: 840 | Train: 504 | Val: 168 | Test: 168
+nipponicus-sedge_w4:
+  Total: 840 | Train: 504 | Val: 168 | Test: 168
+indian-goosegrass_w0:
+  Total: 888 | Train: 532 | Val: 178 | Test: 178
+korean-dock_w0:
+  Total: 1530 | Train: 918 | Val: 306 | Test: 306
+indian-goosegrass_w4:
+  Total: 948 | Train: 568 | Val: 190 | Test: 190
+indian-goosegrass_w9:
+  Total: 885 | Train: 531 | Val: 177 | Test: 177
+nipponicus-sedge_w1:
+  Total: 837 | Train: 501 | Val: 168 | Test: 168
+nipponicus-sedge_w6:
+  Total: 456 | Train: 273 | Val: 91 | Test: 92
+asiatic-dayflower_w4:
+  Total: 840 | Train: 504 | Val: 168 | Test: 168
+indian-goosegrass_w7:
+  Total: 341 | Train: 204 | Val: 68 | Test: 69
+nipponicus-sedge_w5:
+  Total: 792 | Train: 474 | Val: 159 | Test: 159
+nipponicus-sedge_w0:
+  Total: 840 | Train: 504 | Val: 168 | Test: 168
+indian-goosegrass_w1:
+  Total: 949 | Train: 569 | Val: 190 | Test: 190
+nipponicus-sedge_w3:
+  Total: 840 | Train: 504 | Val: 168 | Test: 168
+asiatic-dayflower_w0:
+  Total: 1530 | Train: 918 | Val: 306 | Test: 306
+asian-flatsedge_w5:
+  Total: 1200 | Train: 720 | Val: 240 | Test: 240
+indian-goosegrass_w10:
+  Total: 840 | Train: 504 | Val: 168 | Test: 168
+indian-goosegrass_w12:
+  Total: 321 | Train: 192 | Val: 64 | Test: 65
+indian-goosegrass_w5:
+  Total: 704 | Train: 422 | Val: 141 | Test: 141
+indian-goosegrass_w8:
+  Total: 856 | Train: 513 | Val: 171 | Test: 172
+asiatic-dayflower_w2:
+  Total: 1056 | Train: 633 | Val: 211 | Test: 212
+asian-flatsedge_w2:
+  Total: 1896 | Train: 1137 | Val: 379 | Test: 380
+korean-dock_w5:
+  Total: 360 | Train: 216 | Val: 72 | Test: 72
+asian-flatsedge_w4:
+  Total: 1680 | Train: 1008 | Val: 336 | Test: 336
+indian-goosegrass_w3:
+  Total: 872 | Train: 522 | Val: 175 | Test: 175
+korean-dock_w3:
+  Total: 840 | Train: 504 | Val: 168 | Test: 168
+asian-flatsedge_w8:
+  Total: 96 | Train: 57 | Val: 19 | Test: 20
+============================================================
+OVERALL: Train: 24101 | Val: 8044 | Test: 8052
+Ratios: Train: 59.96% | Val: 20.01% | Test: 20.03%
+
+Dataset split completed! Check: ./data_final_split
