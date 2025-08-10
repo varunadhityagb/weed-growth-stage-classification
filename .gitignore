@@ -1,2 +1,3 @@
-./data/
-./old
+data
+*/data_filtered_by_weeks
+*/data_final_split

@@ -1,0 +1,30 @@
+Densenet Model 3 weed classes
+-----------------------------
+
+
+=============================
+            Data
+=============================
+
+(21 classes)
+Train ->  16697 
+Val ->  5568
+Test -> 5568
+
+
+=============================
+            Model
+=============================
+
+input -> 0.3 Dropout -> 
+    1024 (relu) -> BatchNorm -> 0.3 Dropout -> 
+    512 (relu) -> BatchNorm -> 0.3 Dropout ->  
+    128 (relu) -> BatchNorm -> 0.3 Dropout ->
+    256 (relu) -> BatchNorm -> 0.3 Dropout ->
+    128 (relu) -> 
+output (softmax)
+
+ Total params: 17,484,780 (66.70 MB)
+ Trainable params: 8,698,773 (33.18 MB)
+ Non-trainable params: 87,232 (340.75 KB)
+ Optimizer params: 8,698,775 (33.18 MB)

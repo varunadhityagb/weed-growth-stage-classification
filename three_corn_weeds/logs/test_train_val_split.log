@@ -1,0 +1,52 @@
+Splitting dataset with stratification...
+
+============================================================
+SPLIT STATISTICS
+============================================================
+finger-grass_w0:
+  Total: 1350 | Train: 810 | Val: 270 | Test: 270
+cockspur-grass_w4:
+  Total: 1400 | Train: 840 | Val: 280 | Test: 280
+fall-panicum_w6:
+  Total: 800 | Train: 480 | Val: 160 | Test: 160
+cockspur-grass_w5:
+  Total: 1399 | Train: 839 | Val: 280 | Test: 280
+fall-panicum_w5:
+  Total: 1400 | Train: 840 | Val: 280 | Test: 280
+finger-grass_w3:
+  Total: 1490 | Train: 894 | Val: 298 | Test: 298
+cockspur-grass_w1:
+  Total: 1430 | Train: 858 | Val: 286 | Test: 286
+finger-grass_w5:
+  Total: 1400 | Train: 840 | Val: 280 | Test: 280
+cockspur-grass_w6:
+  Total: 799 | Train: 479 | Val: 160 | Test: 160
+finger-grass_w4:
+  Total: 1400 | Train: 840 | Val: 280 | Test: 280
+finger-grass_w6:
+  Total: 800 | Train: 480 | Val: 160 | Test: 160
+fall-panicum_w4:
+  Total: 1400 | Train: 840 | Val: 280 | Test: 280
+cockspur-grass_w3:
+  Total: 1489 | Train: 893 | Val: 298 | Test: 298
+cockspur-grass_w0:
+  Total: 1349 | Train: 809 | Val: 270 | Test: 270
+finger-grass_w1:
+  Total: 1337 | Train: 801 | Val: 268 | Test: 268
+cockspur-grass_w2:
+  Total: 1430 | Train: 858 | Val: 286 | Test: 286
+fall-panicum_w1:
+  Total: 1445 | Train: 867 | Val: 289 | Test: 289
+fall-panicum_w0:
+  Total: 1365 | Train: 819 | Val: 273 | Test: 273
+fall-panicum_w2:
+  Total: 1445 | Train: 867 | Val: 289 | Test: 289
+fall-panicum_w3:
+  Total: 1475 | Train: 885 | Val: 295 | Test: 295
+finger-grass_w2:
+  Total: 1430 | Train: 858 | Val: 286 | Test: 286
+============================================================
+OVERALL: Train: 16697 | Val: 5568 | Test: 5568
+Ratios: Train: 59.99% | Val: 20.01% | Test: 20.01%
+
+Dataset split completed! Check: ./data_final_split

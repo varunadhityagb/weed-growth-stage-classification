@@ -1,0 +1,96 @@
+Splitting dataset with stratification...
+
+============================================================
+SPLIT STATISTICS
+============================================================
+finger-grass_w0:
+  Total: 1350 | Train: 810 | Val: 270 | Test: 270
+cockspur-grass_w4:
+  Total: 1400 | Train: 840 | Val: 280 | Test: 280
+fall-panicum_w6:
+  Total: 800 | Train: 480 | Val: 160 | Test: 160
+cockspur-grass_w5:
+  Total: 1399 | Train: 839 | Val: 280 | Test: 280
+green-foxtail_w6:
+  Total: 200 | Train: 120 | Val: 40 | Test: 40
+fall-panicum_w5:
+  Total: 1400 | Train: 840 | Val: 280 | Test: 280
+finger-grass_w3:
+  Total: 1490 | Train: 894 | Val: 298 | Test: 298
+green-foxtail_w2:
+  Total: 589 | Train: 353 | Val: 118 | Test: 118
+early-barnyard-grass_w1:
+  Total: 46 | Train: 27 | Val: 9 | Test: 10
+poa-annua_w0:
+  Total: 30 | Train: 18 | Val: 6 | Test: 6
+cockspur-grass_w1:
+  Total: 1430 | Train: 858 | Val: 286 | Test: 286
+finger-grass_w5:
+  Total: 1400 | Train: 840 | Val: 280 | Test: 280
+cockspur-grass_w6:
+  Total: 799 | Train: 479 | Val: 160 | Test: 160
+green-foxtail_w10:
+  Total: 840 | Train: 504 | Val: 168 | Test: 168
+green-foxtail_w12:
+  Total: 321 | Train: 192 | Val: 64 | Test: 65
+green-foxtail_w1:
+  Total: 627 | Train: 375 | Val: 126 | Test: 126
+green-foxtail_w5:
+  Total: 354 | Train: 212 | Val: 71 | Test: 71
+green-foxtail_w8:
+  Total: 856 | Train: 513 | Val: 171 | Test: 172
+finger-grass_w4:
+  Total: 1400 | Train: 840 | Val: 280 | Test: 280
+poa-annua_w1:
+  Total: 45 | Train: 27 | Val: 9 | Test: 9
+finger-grass_w6:
+  Total: 800 | Train: 480 | Val: 160 | Test: 160
+poa-annua_w2:
+  Total: 45 | Train: 27 | Val: 9 | Test: 9
+poa-annua_w3:
+  Total: 90 | Train: 54 | Val: 18 | Test: 18
+early-barnyard-grass_w3:
+  Total: 74 | Train: 44 | Val: 15 | Test: 15
+early-barnyard-grass_w0:
+  Total: 45 | Train: 27 | Val: 9 | Test: 9
+fall-panicum_w4:
+  Total: 1400 | Train: 840 | Val: 280 | Test: 280
+cockspur-grass_w3:
+  Total: 1489 | Train: 893 | Val: 298 | Test: 298
+cockspur-grass_w0:
+  Total: 1349 | Train: 809 | Val: 270 | Test: 270
+green-foxtail_w11:
+  Total: 930 | Train: 558 | Val: 186 | Test: 186
+finger-grass_w1:
+  Total: 1337 | Train: 801 | Val: 268 | Test: 268
+cockspur-grass_w2:
+  Total: 1430 | Train: 858 | Val: 286 | Test: 286
+green-foxtail_w0:
+  Total: 546 | Train: 327 | Val: 109 | Test: 110
+fall-panicum_w1:
+  Total: 1445 | Train: 867 | Val: 289 | Test: 289
+fall-panicum_w0:
+  Total: 1365 | Train: 819 | Val: 273 | Test: 273
+green-foxtail_w4:
+  Total: 558 | Train: 334 | Val: 112 | Test: 112
+fall-panicum_w2:
+  Total: 1445 | Train: 867 | Val: 289 | Test: 289
+green-foxtail_w13:
+  Total: 30 | Train: 18 | Val: 6 | Test: 6
+green-foxtail_w7:
+  Total: 317 | Train: 189 | Val: 64 | Test: 64
+fall-panicum_w3:
+  Total: 1475 | Train: 885 | Val: 295 | Test: 295
+finger-grass_w2:
+  Total: 1430 | Train: 858 | Val: 286 | Test: 286
+early-barnyard-grass_w2:
+  Total: 45 | Train: 27 | Val: 9 | Test: 9
+green-foxtail_w9:
+  Total: 885 | Train: 531 | Val: 177 | Test: 177
+green-foxtail_w3:
+  Total: 541 | Train: 324 | Val: 108 | Test: 109
+============================================================
+OVERALL: Train: 21498 | Val: 7172 | Test: 7177
+Ratios: Train: 59.97% | Val: 20.01% | Test: 20.02%
+
+Dataset split completed! Check: ./data_final_split

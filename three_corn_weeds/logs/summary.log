@@ -1,0 +1,30 @@
+TOTAL CLASSES:  21
+
+ SUMMARY PER CLASS
+============================================================
+Class Name                      Train    Val   Test  Total
+------------------------------------------------------------
+cockspur-grass_w0                 809    270    270   1349
+cockspur-grass_w1                 858    286    286   1430
+cockspur-grass_w2                 858    286    286   1430
+cockspur-grass_w3                 893    298    298   1489
+cockspur-grass_w4                 840    280    280   1400
+cockspur-grass_w5                 839    280    280   1399
+cockspur-grass_w6                 479    160    160    799
+fall-panicum_w0                   819    273    273   1365
+fall-panicum_w1                   867    289    289   1445
+fall-panicum_w2                   867    289    289   1445
+fall-panicum_w3                   885    295    295   1475
+fall-panicum_w4                   840    280    280   1400
+fall-panicum_w5                   840    280    280   1400
+fall-panicum_w6                   480    160    160    800
+finger-grass_w0                   810    270    270   1350
+finger-grass_w1                   801    268    268   1337
+finger-grass_w2                   858    286    286   1430
+finger-grass_w3                   894    298    298   1490
+finger-grass_w4                   840    280    280   1400
+finger-grass_w5                   840    280    280   1400
+finger-grass_w6                   480    160    160    800
+------------------------------------------------------------
+TOTAL                           16697   5568   5568  27833
+============================================================

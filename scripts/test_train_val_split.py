@@ -3,7 +3,7 @@ import shutil
 from sklearn.model_selection import train_test_split
 
 # Set paths
-SRC_ROOT = './data_filtered_by_weeks'  # Your filtered dataset directory
+SRC_ROOT = './data_filtered_by_weeks'  
 DST_ROOT = './data_final_split'
 
 # Define split ratios

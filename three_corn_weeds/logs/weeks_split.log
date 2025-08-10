@@ -1,0 +1,69 @@
+Starting dataset filtering and week-based organization...
+Processing finger-grass...
+  finger-grass_w3: 1490 images
+  finger-grass_w5: 1400 images
+  finger-grass_w0: 1350 images
+  finger-grass_w6: 800 images
+  finger-grass_w2: 1430 images
+  finger-grass_w1: 1337 images
+  finger-grass_w4: 1400 images
+Processing fall-panicum...
+  fall-panicum_w5: 1400 images
+  fall-panicum_w0: 1365 images
+  fall-panicum_w4: 1400 images
+  fall-panicum_w2: 1445 images
+  fall-panicum_w3: 1475 images
+  fall-panicum_w6: 800 images
+  fall-panicum_w1: 1445 images
+Processing cockspur-grass...
+  cockspur-grass_w3: 1489 images
+  cockspur-grass_w6: 799 images
+  cockspur-grass_w1: 1430 images
+  cockspur-grass_w0: 1349 images
+  cockspur-grass_w5: 1399 images
+  cockspur-grass_w4: 1400 images
+  cockspur-grass_w2: 1430 images
+
+==================================================
+DATASET SUMMARY
+==================================================
+
+FINGER-GRASS:
+  finger-grass_w0: 1350 images
+  finger-grass_w1: 1337 images
+  finger-grass_w2: 1430 images
+  finger-grass_w3: 1490 images
+  finger-grass_w4: 1400 images
+  finger-grass_w5: 1400 images
+  finger-grass_w6: 800 images
+  Total for finger-grass: 9207 images
+
+FALL-PANICUM:
+  fall-panicum_w0: 1365 images
+  fall-panicum_w1: 1445 images
+  fall-panicum_w2: 1445 images
+  fall-panicum_w3: 1475 images
+  fall-panicum_w4: 1400 images
+  fall-panicum_w5: 1400 images
+  fall-panicum_w6: 800 images
+  Total for fall-panicum: 9330 images
+
+COCKSPUR-GRASS:
+  cockspur-grass_w0: 1349 images
+  cockspur-grass_w1: 1430 images
+  cockspur-grass_w2: 1430 images
+  cockspur-grass_w3: 1489 images
+  cockspur-grass_w4: 1400 images
+  cockspur-grass_w5: 1399 images
+  cockspur-grass_w6: 799 images
+  Total for cockspur-grass: 9296 images
+
+==================================================
+OVERALL SUMMARY:
+Total classes (weed_week combinations): 21
+Total images: 27833
+Average images per class: 1325.4
+==================================================
+
+Filtered dataset saved to: ./data_filtered_by_weeks
+Ready for train/test/val splitting!

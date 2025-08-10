@@ -1,0 +1,41 @@
+
+AUGMENTATION SUMMARY
+==================================================
+early-barnyard-grass_w0:
+   Before: 27
+   Added:  223
+   After:  250
+early-barnyard-grass_w1:
+   Before: 27
+   Added:  223
+   After:  250
+early-barnyard-grass_w2:
+   Before: 27
+   Added:  223
+   After:  250
+early-barnyard-grass_w3:
+   Before: 44
+   Added:  206
+   After:  250
+green-foxtail_w13:
+   Before: 18
+   Added:  232
+   After:  250
+poa-annua_w0:
+   Before: 18
+   Added:  232
+   After:  250
+poa-annua_w1:
+   Before: 27
+   Added:  223
+   After:  250
+poa-annua_w2:
+   Before: 27
+   Added:  223
+   After:  250
+poa-annua_w3:
+   Before: 54
+   Added:  196
+   After:  250
+==================================================
+Auto-targeted augmentation complete!
