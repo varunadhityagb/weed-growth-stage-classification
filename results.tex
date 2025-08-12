@@ -1,0 +1,95 @@
+% Created 2025-08-12 Tue 14:19
+% Intended LaTeX compiler: xelatex
+\documentclass[11pt]{article}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usepackage[tmargin=2cm,rmargin=0.5in,lmargin=0.5in,margin=0.85in,bmargin=2cm,footskip=.2in]{geometry}
+\title{\thetitle}
+\author{\theauthor}
+\date{\today}
+\AtBeginDocument{\maketitle\tableofcontents\newpage}
+\graphicspath{ {.} }
+\usepackage{fontspec}
+\setmonofont[
+Path=/home/praanesh-nair/.local/share/fonts/,
+UprightFont=JetBrainsMonoNLNerdFont-Regular.ttf
+]{JetBrainsMonoNL Nerd Font}
+\newcommand{\code}[1]{\lstinline{#1}}
+\usepackage{listings}
+\usepackage{xcolor}  % Ensure colors are available
+\lstdefinestyle{customstyle}{
+language=Java,
+basicstyle=\ttfamily\small\fontspec{JetBrainsMonoNL Nerd Font},
+keywordstyle=\color{blue},    % Proper syntax for blue keywords
+commentstyle=\color{gray},    % Proper syntax for gray comments
+stringstyle=\color{red},      % Proper syntax for red strings
+frame=single,
+numbers=left,
+numberstyle=\tiny,
+tabsize=2,
+breaklines=true,
+breakatwhitespace=true,
+prebreak=\textbackslash,
+postbreak=\mbox{\textcolor{red}{$\hookrightarrow$ }},
+showspaces=false,
+showstringspaces=false
+}
+\lstset{style=customstyle}
+\author{Praanesh Balakrishnan Nair}
+\date{\today}
+\title{Results}
+\hypersetup{
+ pdfauthor={Praanesh Balakrishnan Nair},
+ pdftitle={Results},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 30.1 (Org mode 9.7.29)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+\section{Model 1}
+\label{sec:orgf16a581}
+
+\subsection{Date}
+\label{sec:org73b961d}
+\textit{<2025-08-11 Mon>}
+\subsection{Model Results}
+\label{sec:org77aae0f}
+
+\begin{center}
+\begin{tabular}{lrrrrrr}
+Model & Params & Test Loss & Test Acc & Precision & Recall & F1\\
+\hline
+DenseNet121 & 8788843 & 0.1722 & 0.9514 & 0.9179 & 0.9218 & 0.9162\\
+\end{tabular}
+\end{center}
+\subsection{Augmentation:}
+\label{sec:orgda80b66}
+
+\begin{itemize}
+\item Horizontal Flip:
+\begin{itemize}
+\item p=0.5
+\end{itemize}
+\item Vertical Flip:
+\begin{itemize}
+\item p=0.5
+\end{itemize}
+\item Rotate :
+\begin{itemize}
+\item p=0.5
+\item limit=25
+\end{itemize}
+\item Gaussian Blur:
+\begin{itemize}
+\item p=0.2
+\item blur\textsubscript{limit}=3
+\end{itemize}
+\end{itemize}
+\end{document}
