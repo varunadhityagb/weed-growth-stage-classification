@@ -1,0 +1,125 @@
+Starting dataset filtering and week-based organization...
+Processing finger-grass...
+  finger-grass_w3: 1490 images
+  finger-grass_w5: 1400 images
+  finger-grass_w0: 1350 images
+  finger-grass_w6: 800 images
+  finger-grass_w2: 1430 images
+  finger-grass_w1: 1337 images
+  finger-grass_w4: 1400 images
+Processing fall-panicum...
+  fall-panicum_w5: 1400 images
+  fall-panicum_w0: 1365 images
+  fall-panicum_w4: 1400 images
+  fall-panicum_w2: 1445 images
+  fall-panicum_w3: 1475 images
+  fall-panicum_w6: 800 images
+  fall-panicum_w1: 1445 images
+Processing cockspur-grass...
+  cockspur-grass_w3: 1489 images
+  cockspur-grass_w6: 799 images
+  cockspur-grass_w1: 1430 images
+  cockspur-grass_w0: 1349 images
+  cockspur-grass_w5: 1399 images
+  cockspur-grass_w4: 1400 images
+  cockspur-grass_w2: 1430 images
+Processing early-barnyard-grass...
+  early-barnyard-grass_w0: 45 images
+  early-barnyard-grass_w1: 46 images
+  early-barnyard-grass_w2: 45 images
+  early-barnyard-grass_w3: 74 images
+Processing green-foxtail...
+  green-foxtail_w0: 546 images
+  green-foxtail_w11: 930 images
+  green-foxtail_w9: 885 images
+  green-foxtail_w10: 840 images
+  green-foxtail_w3: 541 images
+  green-foxtail_w2: 589 images
+  green-foxtail_w8: 856 images
+  green-foxtail_w7: 317 images
+  green-foxtail_w5: 354 images
+  green-foxtail_w6: 200 images
+  green-foxtail_w1: 627 images
+  green-foxtail_w4: 558 images
+  green-foxtail_w12: 321 images
+  green-foxtail_w13: 30 images
+Processing poa-annua...
+  poa-annua_w0: 30 images
+  poa-annua_w3: 90 images
+  poa-annua_w1: 45 images
+  poa-annua_w2: 45 images
+
+==================================================
+DATASET SUMMARY
+==================================================
+
+FINGER-GRASS:
+  finger-grass_w0: 1350 images
+  finger-grass_w1: 1337 images
+  finger-grass_w2: 1430 images
+  finger-grass_w3: 1490 images
+  finger-grass_w4: 1400 images
+  finger-grass_w5: 1400 images
+  finger-grass_w6: 800 images
+  Total for finger-grass: 9207 images
+
+FALL-PANICUM:
+  fall-panicum_w0: 1365 images
+  fall-panicum_w1: 1445 images
+  fall-panicum_w2: 1445 images
+  fall-panicum_w3: 1475 images
+  fall-panicum_w4: 1400 images
+  fall-panicum_w5: 1400 images
+  fall-panicum_w6: 800 images
+  Total for fall-panicum: 9330 images
+
+COCKSPUR-GRASS:
+  cockspur-grass_w0: 1349 images
+  cockspur-grass_w1: 1430 images
+  cockspur-grass_w2: 1430 images
+  cockspur-grass_w3: 1489 images
+  cockspur-grass_w4: 1400 images
+  cockspur-grass_w5: 1399 images
+  cockspur-grass_w6: 799 images
+  Total for cockspur-grass: 9296 images
+
+EARLY-BARNYARD-GRASS:
+  early-barnyard-grass_w0: 45 images
+  early-barnyard-grass_w1: 46 images
+  early-barnyard-grass_w2: 45 images
+  early-barnyard-grass_w3: 74 images
+  Total for early-barnyard-grass: 210 images
+
+GREEN-FOXTAIL:
+  green-foxtail_w0: 546 images
+  green-foxtail_w1: 627 images
+  green-foxtail_w10: 840 images
+  green-foxtail_w11: 930 images
+  green-foxtail_w12: 321 images
+  green-foxtail_w13: 30 images
+  green-foxtail_w2: 589 images
+  green-foxtail_w3: 541 images
+  green-foxtail_w4: 558 images
+  green-foxtail_w5: 354 images
+  green-foxtail_w6: 200 images
+  green-foxtail_w7: 317 images
+  green-foxtail_w8: 856 images
+  green-foxtail_w9: 885 images
+  Total for green-foxtail: 7594 images
+
+POA-ANNUA:
+  poa-annua_w0: 30 images
+  poa-annua_w1: 45 images
+  poa-annua_w2: 45 images
+  poa-annua_w3: 90 images
+  Total for poa-annua: 210 images
+
+==================================================
+OVERALL SUMMARY:
+Total classes (weed_week combinations): 43
+Total images: 35847
+Average images per class: 833.7
+==================================================
+
+Filtered dataset saved to: ./data_filtered_by_weeks
+Ready for train/test/val splitting!

@@ -9,12 +9,11 @@ train_dir = './data_final_split/train'
 min_count_threshold = 100
 target_count = 250
 
-# Define augmentations
+
 augment = A.Compose([
     A.HorizontalFlip(p=0.5),
-    A.VerticalFlip(p=0.5),
-    A.Rotate(limit=25, p=0.5),
-    A.GaussianBlur(blur_limit=3, p=0.2),
+    A.Rotate(limit=15, p=0.5),
+    A.RandomBrightnessContrast(p=0.3)
 ])
 
 # Track summary
