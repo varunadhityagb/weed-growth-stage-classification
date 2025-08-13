@@ -34,6 +34,7 @@
 
 
 ** Specifications
+- Image size: 224x224
 
 
 * Model 2
@@ -69,3 +70,39 @@
 
 
 ** Specifications
+- Image size: 224x224
+
+* Model 3
+
+** Date
+<2025-08-13 Wed>
+
+
+** Model Results
+
+| Model       |  Params | Test Loss | Test Acc | Precision | Recall |     F1 |
+|-------------+---------+-----------+----------+-----------+--------+--------|
+| DenseNet121 | 8788843 |    0.1966 |   0.9489 |     0.922 |  0.928 | 0.9235 |
+
+** Augmentation Chosen
+
+- Horizontal Flip:
+  - p=0.5
+- Rotate :
+  - p=0.5
+  - limit=25
+- Random Brightness Contrast
+  - p=0.3
+
+** Split
+
+| Train | Test | Validate |
+|-------+------+----------|
+|    33 |   33 |       33 |
+
+
+** Specifications
+- Image size: 224x224
+- Augmentation Change:
+  - No vertical flip and gaussian blur
+  - Random Brightness Contrast was introduced
