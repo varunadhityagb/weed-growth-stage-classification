@@ -15,16 +15,11 @@
 
 ** Augmentation Chosen
 
-- Horizontal Flip:
-  - p=0.5
-- Vertical Flip:
-  - p=0.5
-- Rotate :
-  - p=0.5
-  - limit=25
-- Gaussian Blur:
-  - p=0.2
-  - blur_limit=3
+| HorizontalFlip | VerticalFlip | Rotate   | GaussianBlur   |
+|----------------+--------------+----------+----------------|
+| p=0.5          | p=0.5        | p=0.5    | p=0.2          |
+|                |              | limit=25 | blur_limit = 3 |
+
 
 ** Split
 
@@ -51,16 +46,10 @@
 
 ** Augmentation Chosen
 
-- Horizontal Flip:
-  - p=0.5
-- Vertical Flip:
-  - p=0.5
-- Rotate :
-  - p=0.5
-  - limit=25
-- Gaussian Blur:
-  - p=0.2
-  - blur_limit=3
+| HorizontalFlip | VerticalFlip | Rotate   | GaussianBlur   |
+|----------------+--------------+----------+----------------|
+| p=0.5          | p=0.5        | p=0.5    | p=0.2          |
+|                |              | limit=25 | blur_limit = 3 |
 
 ** Split
 
@@ -70,7 +59,7 @@
 
 
 ** Specifications
-- Image size: 224x224
+- Image size: 224x224 (Same as Model 1)
 
 * Model 3
 
@@ -86,13 +75,12 @@
 
 ** Augmentation Chosen
 
-- Horizontal Flip:
-  - p=0.5
-- Rotate :
-  - p=0.5
-  - limit=25
-- Random Brightness Contrast
-  - p=0.3
+
+| HorizontalFlip | Rotate   | RandomBrightnessContrast |
+|----------------+----------+--------------------------|
+| p=0.5          | p=0.5    | p=0.2                    |
+|                | limit=15 |                          |
+
 
 ** Split
 
@@ -102,7 +90,39 @@
 
 
 ** Specifications
-- Image size: 224x224
+- Image size: 224x224 (Same as Model 1)
 - Augmentation Change:
   - No vertical flip and gaussian blur
   - Random Brightness Contrast was introduced
+
+* Model 4
+
+** Date
+<2025-08-14 Thu>
+
+
+** Model Results
+
+| Model    |   Params | Test Loss | Test Acc | Precision | Recall |     F1 |
+|----------+----------+-----------+----------+-----------+--------+--------|
+| ResNet50 | 26387627 |    0.2845 |   0.9297 |    0.8776 | 0.8989 | 0.8821 |
+
+** Augmentation Chosen
+
+
+| HorizontalFlip | Rotate   | RandomBrightnessContrast |
+|----------------+----------+--------------------------|
+| p=0.5          | p=0.5    | p=0.2                    |
+|                | limit=15 |                          |
+
+
+** Split
+
+| Train | Test | Validate |
+|-------+------+----------|
+|    33 |   33 |       33 |
+
+
+** Specifications
+- Image size: 224x224 (Same as Model 1)
+- Augmentation: (Same as Model 3)
