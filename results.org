@@ -8,9 +8,16 @@
 
 ** Model Results
 
-| Model       |  Params | Test Loss | Test Acc | Precision | Recall |    F1 |
-|-------------+---------+-----------+----------+-----------+--------+-------|
-| DenseNet121 | 8786005 |    0.1831 |   0.9423 |    0.9411 | 0.9451 | 0.942 |
+| Model       |  Params | Test Loss | Test Acc | Precision | Recall |     F1 | Epochs |
+|-------------+---------+-----------+----------+-----------+--------+--------+--------|
+| DenseNet121 | 8788843 |    0.1722 |   0.9514 |    0.9179 | 0.9218 | 0.9162 |     39 |
+
+*** Confusion Matrix
+[[./augmented_corn_grass_weeds/models/densenet/39e/result_images/confusion_matrix.png]]
+*** Loss Plot
+[[./augmented_corn_grass_weeds/models/densenet/39e/result_images/loss.png]]
+*** Accuracy Plot
+[[./augmented_corn_grass_weeds/models/densenet/39e/result_images/accuracy.png]]
 
 
 ** Augmentation Chosen
@@ -20,6 +27,7 @@
 | p=0.5          | p=0.5        | p=0.5    | p=0.2          |
 |                |              | limit=25 | blur_limit = 3 |
 
+- Applied augmentation to classes in trainset with datapoints less than 100
 
 ** Split
 
@@ -27,6 +35,12 @@
 |-------+------+----------|
 |    60 |   20 |       20 |
 
+** Data
+
+|             | Train | Test |  Val |
+|-------------+-------+------+------|
+| Before Aug. | 21498 | 7172 | 7172 |
+| After Aug.  | 23479 | 7172 | 7172 |
 
 ** Specifications
 - Image size: 224x224
@@ -40,9 +54,16 @@
 
 ** Model Results
 
-| Model       |  Params | Test Loss | Test Acc | Precision | Recall |     F1 |
-|-------------+---------+-----------+----------+-----------+--------+--------|
-| DenseNet121 | 8788843 |    0.2677 |   0.9191 |    0.8669 | 0.8865 | 0.8661 |
+| Model       |  Params | Test Loss | Test Acc | Precision | Recall |     F1 | Epochs |
+|-------------+---------+-----------+----------+-----------+--------+--------+--------|
+| DenseNet121 | 8788843 |    0.2677 |   0.9191 |    0.8669 | 0.8865 | 0.8661 |     33 |
+
+*** Confusion Matrix
+[[./augmented_corn_grass_weeds_33_split/models/densenet/result_images/confusion_matrix.png]]
+*** Loss Plot
+[[./augmented_corn_grass_weeds_33_split/models/densenet/result_images/loss.png]]
+*** Accuracy Plot
+[[./augmented_corn_grass_weeds_33_split/models/densenet/result_images/accuracy.png]]
 
 ** Augmentation Chosen
 
@@ -51,12 +72,20 @@
 | p=0.5          | p=0.5        | p=0.5    | p=0.2          |
 |                |              | limit=25 | blur_limit = 3 |
 
+- Applied augmentation to classes in trainset with datapoints less than 100
+
 ** Split
 
 | Train | Test | Validate |
 |-------+------+----------|
 |    33 |   33 |       33 |
 
+** Data
+
+|             | Train |  Test |   Val |
+|-------------+-------+-------+-------|
+| Before Aug. | 11934 | 11955 | 11955 |
+| After Aug.  | 14219 | 11955 | 11955 |
 
 ** Specifications
 - Image size: 224x224 (Same as Model 1)
@@ -69,12 +98,18 @@
 
 ** Model Results
 
-| Model       |  Params | Test Loss | Test Acc | Precision | Recall |     F1 |
-|-------------+---------+-----------+----------+-----------+--------+--------|
-| DenseNet121 | 8788843 |    0.1966 |   0.9489 |     0.922 |  0.928 | 0.9235 |
+| Model       |  Params | Test Loss | Test Acc | Precision | Recall |     F1 | Epochs |
+|-------------+---------+-----------+----------+-----------+--------+--------+--------|
+| DenseNet121 | 8788843 |    0.1966 |   0.9489 |     0.922 |  0.928 | 0.9235 |     30 |
+
+*** Confusion Matrix
+[[./new_augmented_corn_grass_weeds_33_split/models/densenet/result_images/confusion_matrix.png]]
+*** Loss Plot
+[[./new_augmented_corn_grass_weeds_33_split/models/densenet/result_images/loss.png]]
+*** Accuracy Plot
+[[./new_augmented_corn_grass_weeds_33_split/models/densenet/result_images/accuracy.png]]
 
 ** Augmentation Chosen
-
 
 | HorizontalFlip | Rotate   | RandomBrightnessContrast |
 |----------------+----------+--------------------------|
@@ -88,6 +123,12 @@
 |-------+------+----------|
 |    33 |   33 |       33 |
 
+** Data
+
+|             | Train |  Test |   Val |
+|-------------+-------+-------+-------|
+| Before Aug. | 11934 | 11955 | 11955 |
+| After Aug.  | 14219 | 11955 | 11955 |
 
 ** Specifications
 - Image size: 224x224 (Same as Model 1)
@@ -103,12 +144,18 @@
 
 ** Model Results
 
-| Model    |   Params | Test Loss | Test Acc | Precision | Recall |     F1 |
-|----------+----------+-----------+----------+-----------+--------+--------|
-| ResNet50 | 26387627 |    0.2845 |   0.9297 |    0.8776 | 0.8989 | 0.8821 |
+| Model    |   Params | Test Loss | Test Acc | Precision | Recall |     F1 | Epochs |
+|----------+----------+-----------+----------+-----------+--------+--------+--------|
+| ResNet50 | 26387627 |    0.2845 |   0.9297 |    0.8776 | 0.8989 | 0.8821 |     28 |
+
+*** Confusion Matrix
+[[./new_augmented_corn_grass_weeds_33_split/models/resnet50/result_images/confusion_matrix.png]]
+*** Loss Plot
+[[./new_augmented_corn_grass_weeds_33_split/models/resnet50/result_images/loss.png]]
+*** Accuracy Plot
+[[./new_augmented_corn_grass_weeds_33_split/models/resnet50/result_images/accuracy.png]]
 
 ** Augmentation Chosen
-
 
 | HorizontalFlip | Rotate   | RandomBrightnessContrast |
 |----------------+----------+--------------------------|
@@ -122,6 +169,98 @@
 |-------+------+----------|
 |    33 |   33 |       33 |
 
+** Data
+
+|             | Train |  Test |   Val |
+|-------------+-------+-------+-------|
+| Before Aug. | 11934 | 11955 | 11955 |
+| After Aug.  | 14219 | 11955 | 11955 |
+
+** Specifications
+- Image size: 224x224 (Same as Model 1)
+- Augmentation: (Same as Model 3)
+
+
+* Model 5
+** Date
+[2025-08-16 Sun]
+
+** Model Results
+
+| Model            |  Params | Test Loss | Test Acc | Precision | Recall |     F1 | Epochs |
+|------------------+---------+-----------+----------+-----------+--------+--------+--------|
+| EfficientNetV2B0 | 7932795 |    0.2398 |   0.9543 |    0.9155 | 0.9298 | 0.9213 |     46 |
+
+*** Confusion Matrix
+[[./new_augmented_corn_grass_weeds_33_split/models/efficientnetv2b0/result_images/confusion_matrix.png]]
+*** Loss Plot
+[[./new_augmented_corn_grass_weeds_33_split/models/efficientnetv2b0/result_images/loss.png]]
+*** Accuracy Plot
+[[./new_augmented_corn_grass_weeds_33_split/models/efficientnetv2b0/result_images/accuracy.png]]
+
+** Augmentation Chosen
+
+| HorizontalFlip | Rotate   | RandomBrightnessContrast |
+|----------------+----------+--------------------------|
+| p=0.5          | p=0.5    | p=0.2                    |
+|                | limit=15 |                          |
+
+
+** Split
+
+| Train | Test | Validate |
+|-------+------+----------|
+|    33 |   33 |       33 |
+
+** Data
+
+|             | Train |  Test |   Val |
+|-------------+-------+-------+-------|
+| Before Aug. | 11934 | 11955 | 11955 |
+| After Aug.  | 14219 | 11955 | 11955 |
+
+** Specifications
+- Image size: 224x224 (Same as Model 1)
+- Augmentation: (Same as Model 3)
+
+
+* Model 6
+** Date
+[2025-08-16 Sun]
+
+** Model Results
+
+| Model        |   Params | Test Loss | Test Acc | Precision | Recall |     F1 | Epochs |
+|--------------+----------+-----------+----------+-----------+--------+--------+--------|
+| ConvNeXtTiny | 29309323 |    0.2969 |   0.9028 |    0.8671 | 0.8913 | 0.8768 |     53 |
+
+*** Confusion Matrix
+[[./new_augmented_corn_grass_weeds_33_split/models/convnext-tiny/60e/result_images/confusion_matrix.png]]
+*** Loss Plot
+[[./new_augmented_corn_grass_weeds_33_split/models/convnext-tiny/60e/result_images/loss.png]]
+*** Accuracy Plot
+[[./new_augmented_corn_grass_weeds_33_split/models/convnext-tiny/60e/result_images/accuracy.png]]
+
+** Augmentation Chosen
+
+| HorizontalFlip | Rotate   | RandomBrightnessContrast |
+|----------------+----------+--------------------------|
+| p=0.5          | p=0.5    | p=0.2                    |
+|                | limit=15 |                          |
+
+
+** Split
+
+| Train | Test | Validate |
+|-------+------+----------|
+|    33 |   33 |       33 |
+
+** Data
+
+|             | Train |  Test |   Val |
+|-------------+-------+-------+-------|
+| Before Aug. | 11934 | 11955 | 11955 |
+| After Aug.  | 14219 | 11955 | 11955 |
 
 ** Specifications
 - Image size: 224x224 (Same as Model 1)
