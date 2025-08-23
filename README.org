@@ -265,3 +265,46 @@
 ** Specifications
 - Image size: 224x224 (Same as Model 1)
 - Augmentation: (Same as Model 3)
+
+
+* Model 7
+** Date
+[2025-08-17 Sun]
+
+** Model Results
+
+| Model            |  Params | Test Loss | Test Acc | Precision | Recall |     F1 | Epochs |
+|------------------+---------+-----------+----------+-----------+--------+--------+--------|
+| MobileNetV3Large | 4682155 |    0.5631 |   0.7985 |    0.7566 | 0.8039 | 0.7506 | 55 |
+
+*** Confusion Matrix
+[[./new_augmented_corn_grass_weeds_33_split/models/mobilenetv3large/result_images/confusion_matrix.png]]
+*** Loss Plot
+[[./new_augmented_corn_grass_weeds_33_split/models/mobilenetv3large/result_images/loss.png]]
+*** Accuracy Plot
+[[./new_augmented_corn_grass_weeds_33_split/models/mobilenetv3large/result_images/accuracy.png]]
+
+** Augmentation Chosen
+
+| HorizontalFlip | Rotate   | RandomBrightnessContrast |
+|----------------+----------+--------------------------|
+| p=0.5          | p=0.5    | p=0.2                    |
+|                | limit=15 |                          |
+
+
+** Split
+
+| Train | Test | Validate |
+|-------+------+----------|
+|    33 |   33 |       33 |
+
+** Data
+
+|             | Train |  Test |   Val |
+|-------------+-------+-------+-------|
+| Before Aug. | 11934 | 11955 | 11955 |
+| After Aug.  | 14219 | 11955 | 11955 |
+
+** Specifications
+- Image size: 224x224 (Same as Model 1)
+- Augmentation: (Same as Model 3)
