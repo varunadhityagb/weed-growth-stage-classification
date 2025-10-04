@@ -364,6 +364,7 @@
 |--------------------------------+---------+-----------+----------+-----------+--------+--------+--------|
 | EfficientNetV2B0 + CBAM + GELU | 7470622 |     0.846 |   0.9569 |    0.9357 | 0.9394 | 0.9368 |     56 |
 
+
 | Confusion matrix                                                                                               | Loss Plot                                                                                          | Accuracy Plot                                                                                          |
 |----------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------|
 | [[./new_augmented_corn_grass_weeds_33_split/models/efficientnetv2b0/cbam_gelu/result_images/confusion_matrix.png]] | [[./new_augmented_corn_grass_weeds_33_split/models/efficientnetv2b0/cbam_gelu/result_images/loss.png]] | [[./new_augmented_corn_grass_weeds_33_split/models/efficientnetv2b0/cbam_gelu/result_images/accuracy.png]] |
@@ -412,7 +413,7 @@
 
 | Confusion matrix                                                                           | Loss Plot                                                                                          | Accuracy Plot                                                                                          |
 |--------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------|
-| [[./new_augmented_corn_grass_weeds_33_split/models/vitb16/result_images/confusion_matrix.png]] | [[./new_augmented_corn_grass_weeds_33_split/models/efficientnetv2b0/cbam_gelu/result_images/loss.png]] | [[./new_augmented_corn_grass_weeds_33_split/models/efficientnetv2b0/cbam_gelu/result_images/accuracy.png]] |
+| [[./new_augmented_corn_grass_weeds_33_split/models/vitb16/result_images/confusion_matrix.png]] | [[./new_augmented_corn_grass_weeds_33_split/models/vitb16/result_images/loss.png]] | [[./new_augmented_corn_grass_weeds_33_split/models/vitb16/result_images/accuracy.png]] |
 |                                                                                            |                                                                                                    |                                                                                                        |
 
 ** Augmentation Chosen
