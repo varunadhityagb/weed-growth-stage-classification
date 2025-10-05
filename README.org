@@ -444,3 +444,49 @@
 - INITIAL_LR : 0.0001
 - EPOCHS : 100
 - EarlyStopping_Patience: 10
+
+
+
+* Model 10
+** Date
+[2025-10-05 Sat]
+
+** Model Results
+| Model                |   Params | Test Loss | Test Acc | Precision | Recall |     F1 | Epochs |
+|----------------------+----------+-----------+----------+-----------+--------+--------+--------|
+| RegNet (RegNetY-032) | 18869557 |    0.2271 |   0.9545 |    0.9412 | 0.9269 | 0.9329 |     42 |
+
+
+| Confusion matrix                                                                           | Loss Plot                                                                      | Accuracy Plot                                                                      |
+|--------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------+------------------------------------------------------------------------------------|
+| [[./new_augmented_corn_grass_weeds_33_split/models/regnet/result_images/confusion_matrix.png]] | [[./new_augmented_corn_grass_weeds_33_split/models/regnet/result_images/loss.png]] | [[./new_augmented_corn_grass_weeds_33_split/models/regnet/result_images/accuracy.png]] |
+|                                                                                            |                                                                                |                                                                                    |
+
+** Augmentation Chosen
+
+| HorizontalFlip | Rotate   | RandomBrightnessContrast |
+|----------------+----------+--------------------------|
+| p=0.5          | p=0.5    | p=0.2                    |
+|                | limit=15 |                          |
+
+** Split
+
+| Train | Test | Validate |
+|-------+------+----------|
+|    33 |   33 |       33 |
+
+** Data
+
+|             | Train |  Test |   Val |
+|-------------+-------+-------+-------|
+| Before Aug. | 11934 | 11955 | 11955 |
+| After Aug.  | 14219 | 11955 | 11955 |
+
+** Specifications
+- Image size: 224x224 (Same as Model 1)
+- Augmentation: (Same as Model 3)
+- BATCH_SIZE : 32
+- DROPOUT_RATE : 0.3
+- INITIAL_LR : 0.001
+- EPOCHS : 100
+- EarlyStopping_Patience: 10
