@@ -490,3 +490,61 @@
 - INITIAL_LR : 0.001
 - EPOCHS : 100
 - EarlyStopping_Patience: 10
+
+
+* Model 11
+** Date
+[2025-10-13 Sat]
+
+** Model Results
+*** without batch normalization and dropout
+| Model    |   Params | Test Loss | Test Acc | Precision | Recall |     F1 | Epochs |
+|----------+----------+-----------+----------+-----------+--------+--------+--------|
+| Xception | 23654227 |    0.2521 |   0.9419 |    0.9128 | 0.9118 | 0.9079 | 32     |
+
+
+| Confusion matrix                                                                                              | Loss Plot                                                                                         | Accuracy Plot                                                                                         |
+|---------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------|
+| [[./new_augmented_corn_grass_weeds_33_split/models/xception_net/without_bn_and_d/result_images/confusion_matrix.png]]         | [[./new_augmented_corn_grass_weeds_33_split/models/xception_net/without_bn_and_d/result_images/loss.png]] | [[./new_augmented_corn_grass_weeds_33_split/models/xception_net/without_bn_and_d/result_images/accuracy.png]] |
+|                                                                                                               |                                                                                                   |                                                                                                       |
+
+*** with batch normalization and dropout
+| Model    |   Params | Test Loss | Test Acc | Precision | Recall |     F1 | Epochs |
+|----------+----------+-----------+----------+-----------+--------+--------+--------|
+| Xception | 23661395 |     0.629 |   0.7787 |    0.7789 | 0.7724 | 0.7591 | 51     |
+
+
+| Confusion matrix                                                                                 | Loss Plot                                                                            | Accuracy Plot                                                                            |
+|--------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------|
+| [[./new_augmented_corn_grass_weeds_33_split/models/xception_net/result_images/confusion_matrix.png]] | [[./new_augmented_corn_grass_weeds_33_split/models/xception_net/result_images/loss.png]] | [[./new_augmented_corn_grass_weeds_33_split/models/xception_net/result_images/accuracy.png]] |
+|                                                                                                  |                                                                                      |                                                                                          |
+
+
+** Augmentation Chosen
+
+| HorizontalFlip | Rotate   | RandomBrightnessContrast |
+|----------------+----------+--------------------------|
+| p=0.5          | p=0.5    | p=0.2                    |
+|                | limit=15 |                          |
+
+** Split
+
+| Train | Test | Validate |
+|-------+------+----------|
+|    33 |   33 |       33 |
+
+** Data
+
+|             | Train |  Test |   Val |
+|-------------+-------+-------+-------|
+| Before Aug. | 11934 | 11955 | 11955 |
+| After Aug.  | 14219 | 11955 | 11955 |
+
+** Specifications
+- Image size: 224x224 (Same as Model 1)
+- Augmentation: (Same as Model 3)
+- BATCH_SIZE : 32
+- DROPOUT_RATE : 0.3
+- INITIAL_LR : 0.001
+- EPOCHS : 100
+- EarlyStopping_Patience: 10
