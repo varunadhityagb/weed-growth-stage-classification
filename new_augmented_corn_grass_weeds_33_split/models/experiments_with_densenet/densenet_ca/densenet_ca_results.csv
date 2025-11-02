@@ -1,0 +1,2 @@
+Model,Attention,Blocks,Params,Param_increase,Test_Loss,Test_Acc,Precision,Recall,F1,Acc_vs_baseline,F1_vs_baseline
+densenet_ca,ca,[4],8889355,100512,0.1988,0.9441,0.9091,0.9340,0.9185,-0.48%,-0.50%
