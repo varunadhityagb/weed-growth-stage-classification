@@ -1,0 +1,2 @@
+Model,Attention,Params,Param_increase,Test_Loss,Test_Acc,Precision,Recall,F1,Acc_vs_baseline,F1_vs_baseline
+densenet_simam,simam,8788843,0,0.2010,0.9492,0.9104,0.9176,0.9120,+0.03%,-1.15%

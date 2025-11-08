@@ -1,0 +1,2 @@
+Model,Attention,Params,Param_increase,Test_Loss,Test_Acc,Precision,Recall,F1,Acc_vs_baseline,F1_vs_baseline
+densenet_triple,triplet,8789140,297,0.1761,0.9543,0.9304,0.9491,0.9387,+0.54%,+1.52%

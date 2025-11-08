@@ -1,0 +1,2 @@
+Model,Attention,params,Param_increase,Test_Loss,Test_Acc,Precision,Recall,F1,Acc_vs_baseline,F1_vs_baseline
+densenet_cbam,cbam,8921102,132259,0.2167,0.9464,0.8978,0.9205,0.9063,-0.25%,-1.72%

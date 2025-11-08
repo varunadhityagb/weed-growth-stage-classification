@@ -2,3 +2,9 @@ data
 */data_filtered_by_weeks
 */data_final_split
 augmented_corn_grass_weeds/models/.ipynb_checkpoints/
+*.h5
+*.keras
+*.pdf
+*.zip
+*.pth
+new_augmented_corn_grass_weeds_33_split/models/experiments_with_densenet/template.ipynb

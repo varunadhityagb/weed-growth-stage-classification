@@ -519,7 +519,6 @@
 | [[./new_augmented_corn_grass_weeds_33_split/models/xception_net/result_images/confusion_matrix.png]] | [[./new_augmented_corn_grass_weeds_33_split/models/xception_net/result_images/loss.png]] | [[./new_augmented_corn_grass_weeds_33_split/models/xception_net/result_images/accuracy.png]] |
 |                                                                                                  |                                                                                      |                                                                                          |
 
-
 ** Augmentation Chosen
 
 | HorizontalFlip | Rotate   | RandomBrightnessContrast |
@@ -551,7 +550,7 @@
 
 
 
-** Model 12
+* Model 12
 ** Date
 [2025-10-14 Sat]
 
@@ -578,7 +577,6 @@
 | [[./new_augmented_corn_grass_weeds_33_split/models/nasnetmobile/result_images/confusion_matrix.png]] | [[./new_augmented_corn_grass_weeds_33_split/models/nasnetmobile/result_images/loss.png]] | [[./new_augmented_corn_grass_weeds_33_split/models/nasnetmobile/result_images/accuracy.png]] |
 |                                                                                                  |                                                                                      |                                                                                          |
 
-
 ** Augmentation Chosen
 
 | HorizontalFlip | Rotate   | RandomBrightnessContrast |
@@ -610,7 +608,7 @@
 
 
 
-** Model 13
+* Model 13
 ** Date
 [2025-11-01 Sat]
 
@@ -626,7 +624,6 @@
 | [[./new_augmented_corn_grass_weeds_33_split/models/experiments_with_densenet/densenet_eca/result_images/confusion_matrix.png]] | [[./new_augmented_corn_grass_weeds_33_split/models/experiments_with_densenet/densenet_eca/result_images/loss.png]] | [[./new_augmented_corn_grass_weeds_33_split/models/experiments_with_densenet/densenet_eca/result_images/accuracy.png]] |
 |                                                                                                                            |                                                                                                                |                                                                                                                    |
 
-
 ** Augmentation Chosen
 
 | HorizontalFlip | Rotate   | RandomBrightnessContrast |
@@ -655,11 +652,14 @@
 - INITIAL_LR : 0.001
 - EPOCHS : 100
 - EarlyStopping_Patience: 10
-- ECA at the end of densenet
+
+** Model arch
+| INPUT | DENSENET | ECA | DENSE LAYERS |
 
 
 
-*** Model 14
+
+* Model 14
 ** Date
 [2025-11-02 Sat]
 
@@ -675,6 +675,54 @@
 | [[./new_augmented_corn_grass_weeds_33_split/models/experiments_with_densenet/densenet_ca/result_images/confusion_matrix.png]] | [[./new_augmented_corn_grass_weeds_33_split/models/experiments_with_densenet/densenet_eca/result_images/loss.png]] | [[./new_augmented_corn_grass_weeds_33_split/models/experiments_with_densenet/densenet_ca/result_images/accuracy.png]] |
 |                                                                                                                           |                                                                                                                |                                                                                                                   |
 
+** Augmentation Chosen
+
+| HorizontalFlip | Rotate   | RandomBrightnessContrast |
+|----------------+----------+--------------------------|
+| p=0.5          | p=0.5    | p=0.2                    |
+|                | limit=15 |                          |
+
+** Split
+
+| Train | Test | Validate |
+|-------+------+----------|
+|    33 |   33 |       33 |
+
+** Data
+
+|             | Train |  Test |   Val |
+|-------------+-------+-------+-------|
+| Before Aug. | 11934 | 11955 | 11955 |
+| After Aug.  | 14219 | 11955 | 11955 |
+
+** Specifications
+- Image size: 224x224 (Same as Model 1)
+- Augmentation: (Same as Model 3)
+- BATCH_SIZE : 32
+- DROPOUT_RATE : 0.3
+- INITIAL_LR : 0.001
+- EPOCHS : 100
+- EarlyStopping_Patience: 10
+
+** Model arch
+| INPUT | DENSENET | CA | DENSE LAYERS |
+
+
+* Model 15
+** Date
+[2025-11-04 Sat]
+
+** Model Results
+
+| Model              |  Params | Test Loss | Test Acc | Precision | Recall |     F1 | Epochs |
+|--------------------+---------+-----------+----------+-----------+--------+--------+--------|
+| Densenet121 + CBAM | 8921102 |    0.2167 |   0.9464 |    0.8978 | 0.9205 | 0.9063 |        |
+
+
+| Confusion matrix                                                                                                            | Loss Plot                                                                                                       | Accuracy Plot                                                                                                       |
+|-----------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------|
+| [[./new_augmented_corn_grass_weeds_33_split/models/experiments_with_densenet/densenet_cbam/result_images/confusion_matrix.png]] | [[./new_augmented_corn_grass_weeds_33_split/models/experiments_with_densenet/densenet_cbam/result_images/loss.png]] | [[./new_augmented_corn_grass_weeds_33_split/models/experiments_with_densenet/densenet_cbam/result_images/accuracy.png]] |
+|                                                                                                                             |                                                                                                                 |                                                                                                                     |
 
 ** Augmentation Chosen
 
@@ -704,4 +752,158 @@
 - INITIAL_LR : 0.001
 - EPOCHS : 100
 - EarlyStopping_Patience: 10
-- CA after the 4th block of densenet
+
+** Model arch
+| INPUT | DENSENET | CBAM | DENSE LAYERS |
+
+
+
+
+
+* Model 16
+** Date
+[2025-11-04 Sat]
+
+** Model Results
+
+| Model               |  Params | Test Loss | Test Acc | Precision | Recall |     F1 | Epochs |
+|---------------------+---------+-----------+----------+-----------+--------+--------+--------|
+| Densenet121 + SIMAM | 8788843 |    0.2010 |   0.9492 |    0.9104 | 0.9176 | 0.9120 |        |
+
+
+| Confusion matrix                                                                                                             | Loss Plot                                                                                                        | Accuracy Plot                                                                                                        |
+|------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------|
+| [[./new_augmented_corn_grass_weeds_33_split/models/experiments_with_densenet/densenet_simam/result_images/confusion_matrix.png]] | [[./new_augmented_corn_grass_weeds_33_split/models/experiments_with_densenet/densenet_simam/result_images/loss.png]] | [[./new_augmented_corn_grass_weeds_33_split/models/experiments_with_densenet/densenet_simam/result_images/accuracy.png]] |
+|                                                                                                                              |                                                                                                                  |                                                                                                                      |
+
+** Augmentation Chosen
+
+| HorizontalFlip | Rotate   | RandomBrightnessContrast |
+|----------------+----------+--------------------------|
+| p=0.5          | p=0.5    | p=0.2                    |
+|                | limit=15 |                          |
+
+** Split
+
+| Train | Test | Validate |
+|-------+------+----------|
+|    33 |   33 |       33 |
+
+** Data
+
+|             | Train |  Test |   Val |
+|-------------+-------+-------+-------|
+| Before Aug. | 11934 | 11955 | 11955 |
+| After Aug.  | 14219 | 11955 | 11955 |
+
+** Specifications
+- Image size: 224x224 (Same as Model 1)
+- Augmentation: (Same as Model 3)
+- BATCH_SIZE : 32
+- DROPOUT_RATE : 0.3
+- INITIAL_LR : 0.001
+- EPOCHS : 100
+- EarlyStopping_Patience: 10
+
+** Model arch
+| INPUT | DENSENET | SIMAM | DENSE LAYERS |
+
+
+
+* Model 17
+** Date
+[2025-11-06 Sat]
+
+** Model Results
+
+| Model             |   Params | Test Loss | Test Acc | Precision | Recall |     F1 | Epochs |
+|-------------------+----------+-----------+----------+-----------+--------+--------+--------|
+| Densenet121 + GAM | 60302251 |    0.1950 |   0.9482 |    0.9101 | 0.9377 | 0.9212 |        |
+
+
+| Confusion matrix                                                                                                            | Loss Plot                                                                                                       | Accuracy Plot                                                                                                       |
+|-----------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------|
+| [[./new_augmented_corn_grass_weeds_33_split/models/experiments_with_densenet/densenet_gam/result_images/confusion_matrix.png]] | [[./new_augmented_corn_grass_weeds_33_split/models/experiments_with_densenet/densenet_gam/result_images/loss.png]] | [[./new_augmented_corn_grass_weeds_33_split/models/experiments_with_densenet/densenet_gam/result_images/accuracy.png]] |
+|                                                                                                                             |                                                                                                                 |                                                                                                                     |
+
+** Augmentation Chosen
+
+| HorizontalFlip | Rotate   | RandomBrightnessContrast |
+|----------------+----------+--------------------------|
+| p=0.5          | p=0.5    | p=0.2                    |
+|                | limit=15 |                          |
+
+** Split
+
+| Train | Test | Validate |
+|-------+------+----------|
+|    33 |   33 |       33 |
+
+** Data
+
+|             | Train |  Test |   Val |
+|-------------+-------+-------+-------|
+| Before Aug. | 11934 | 11955 | 11955 |
+| After Aug.  | 14219 | 11955 | 11955 |
+
+** Specifications
+- Image size: 224x224 (Same as Model 1)
+- Augmentation: (Same as Model 3)
+- BATCH_SIZE : 32
+- DROPOUT_RATE : 0.3
+- INITIAL_LR : 0.001
+- EPOCHS : 100
+- EarlyStopping_Patience: 10
+
+** Model arch
+| INPUT | DENSENET | GAM | DENSE LAYERS |
+
+
+
+* Model 18
+** Date
+[2025-11-06 Sat]
+
+** Model Results
+
+| Model                 |  Params | Test Loss | Test Acc | Precision | Recall |     F1 | Epochs |
+|-----------------------+---------+-----------+----------+-----------+--------+--------+--------|
+| Densenet121 + TRIPLET | 8789140 |    0.1761 |   0.9543 |    0.9304 | 0.9491 | 0.9387 |        |
+
+
+| Confusion matrix                                                                                                              | Loss Plot                                                                                                         | Accuracy Plot                                                                                                         |
+|-------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------|
+| [[./new_augmented_corn_grass_weeds_33_split/models/experiments_with_densenet/densenet_triple/result_images/confusion_matrix.png]] | [[./new_augmented_corn_grass_weeds_33_split/models/experiments_with_densenet/densenet_triple/result_images/loss.png]] | [[./new_augmented_corn_grass_weeds_33_split/models/experiments_with_densenet/densenet_triple/result_images/accuracy.png]] |
+|                                                                                                                               |                                                                                                                   |                                                                                                                       |
+
+** Augmentation Chosen
+
+| HorizontalFlip | Rotate   | RandomBrightnessContrast |
+|----------------+----------+--------------------------|
+| p=0.5          | p=0.5    | p=0.2                    |
+|                | limit=15 |                          |
+
+** Split
+
+| Train | Test | Validate |
+|-------+------+----------|
+|    33 |   33 |       33 |
+
+** Data
+
+|             | Train |  Test |   Val |
+|-------------+-------+-------+-------|
+| Before Aug. | 11934 | 11955 | 11955 |
+| After Aug.  | 14219 | 11955 | 11955 |
+
+** Specifications
+- Image size: 224x224 (Same as Model 1)
+- Augmentation: (Same as Model 3)
+- BATCH_SIZE : 32
+- DROPOUT_RATE : 0.3
+- INITIAL_LR : 0.001
+- EPOCHS : 100
+- EarlyStopping_Patience: 10
+
+** Model arch
+| INPUT | DENSENET | TRIPLET | DENSE LAYERS |
