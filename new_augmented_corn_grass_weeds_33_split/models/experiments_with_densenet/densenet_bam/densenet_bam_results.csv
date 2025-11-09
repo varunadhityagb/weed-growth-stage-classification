@@ -1,0 +1,2 @@
+Model,Attention,Params,Param_increase,Test_Loss,Test_Acc,Precision,Recall,F1,Acc_vs_baseline,F1_vs_baseline
+densenet_bam,bam,9060524,271681,0.1917,0.9475,0.9278,0.9302,0.9259,-0.14%,+0.24%
